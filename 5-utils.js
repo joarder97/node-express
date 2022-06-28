@@ -3,3 +3,4 @@ const sayHi = (name) => {
 }
 
 module.exports = sayHi
+console.log(module)

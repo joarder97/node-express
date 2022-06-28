@@ -4,6 +4,6 @@ const sayHi = require('./5-utils')
 // console.log(names)
 // console.log(utils)
 
-// utils.sayHi('masud')
+sayHi('masud')
 sayHi(names.jhon)
-// sayHi(peter)
+sayHi(names.peter)
