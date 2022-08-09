@@ -1,0 +1,24 @@
+{
+  "name": "express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "1-intro.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joarder97/node-express.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joarder97/node-express/issues"
+  },
+  "homepage": "https://github.com/joarder97/node-express#readme",
+  "dependencies": {
+    "i": "^0.3.7",
+    "lodash": "^4.17.21"
+  }
+}
