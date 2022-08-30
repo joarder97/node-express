@@ -47,7 +47,6 @@ app.post("/", (req, res)=> {
         const response = await mailchimp.lists.batchListMembers(process.env.USER_ID, jsonData);
         const error = JSON.stringify(response);
         var json = JSON.parse(error);
-        // console.log(json.error_count);
         if(json.error_count > 0){
             res.sendFile(__dirname + "/failure.html");
         } else{
@@ -61,12 +60,6 @@ app.post("/", (req, res)=> {
     } catch(err){
         console.log(err);
     } 
-
-
-    // console.log(request);
-
-    // request.write(jsonData);
-    // request.end();
 });
 
 app.post("/failure", (req, res) => {
@@ -79,6 +72,3 @@ app.post("/failure", (req, res) => {
 app.listen(3000, () => {
     console.log("Server started on port 3000");
 } );
-
-// 33a518a93e77c114a2b4e5b33eba4227-us10
-// 97c518ea44
