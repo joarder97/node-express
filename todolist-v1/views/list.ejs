@@ -8,6 +8,12 @@
 </head>
 
 <body>
-    <h1>This is a <%= kindOfDay %> !</h1>
+
+    <% if(kindOfDay === "Friday" || kindOfDay === "Saturday") { %>
+        <h1 style="color: purple"><%= kindOfDay %></h1>
+    <% } else { %>
+        <h1 style="color: green"><%= kindOfDay %></h1>
+    <% } %>
+
 </body>
 </html>
